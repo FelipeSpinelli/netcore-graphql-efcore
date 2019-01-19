@@ -3,6 +3,7 @@ using EFCoreGraphQL.Api.GraphQL.Types;
 using EFCoreGraphQL.Core.Data;
 using EFCoreGraphQL.Data;
 using EFCoreGraphQL.Data.Repositories;
+using GraphiQl;
 using GraphQL;
 using GraphQL.Types;
 using Microsoft.AspNetCore.Builder;
