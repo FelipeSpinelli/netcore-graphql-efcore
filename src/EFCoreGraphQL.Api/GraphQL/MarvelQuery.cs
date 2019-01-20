@@ -20,7 +20,7 @@ namespace EFCoreGraphQL.Api.GraphQL
                 "characters",
                 resolve: context => characterRepository.GetAll());
 
-            Field<ComicType>(
+            Field<ListGraphType<ComicType>>(
                 "comics",
                 resolve: context => comicRepository.GetAll());
 
