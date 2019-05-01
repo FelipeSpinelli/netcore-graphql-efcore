@@ -11,12 +11,16 @@ namespace EFCoreGraphQL.Data.Repositories
     {
         public ComicRepository(MarvelContext db) : base(db) { }
 
-        public async Task Add(Comic comic)
+        public async Task<Comic> Add(Comic comic)
         {
+            comic.Id = Guid.NewGuid();
+
             await _db.AddAsync(comic);
             await _db.SaveChangesAsync();
+
+            return comic;
         }
-        
+
         public async Task<IEnumerable<Comic>> GetByCharacter(Guid characterId)
         {
             var query = $@"

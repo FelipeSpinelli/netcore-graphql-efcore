@@ -7,7 +7,7 @@ namespace EFCoreGraphQL.Core.Data
 {
     public interface IComicRepository
     {
-        Task Add(Comic comic);
+        Task<Comic> Add(Comic comic);
         Task<IEnumerable<Comic>> GetAll();
         Task<IEnumerable<Comic>> GetByCharacter(Guid characterId);
     }
