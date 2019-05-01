@@ -8,6 +8,7 @@ namespace EFCoreGraphQL.Api.GraphQL
         public MarvelSchema(IDependencyResolver resolver) : base(resolver)
         {
             Query = resolver.Resolve<MarvelQuery>();
+            Mutation = resolver.Resolve<MarvelMutation>();
         }
     }
 }
