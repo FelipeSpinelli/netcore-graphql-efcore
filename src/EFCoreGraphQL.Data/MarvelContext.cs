@@ -10,10 +10,10 @@ namespace EFCoreGraphQL.Data
             Database.SetCommandTimeout(0);
         }
 
-        public DbSet<Character> Characters { get; set; }
-        public DbSet<Comic> Comics { get; set; }
-        public DbSet<Serie> Series { get; set; }
-        public DbSet<Event> Events { get; set; }
+        public DbSet<Character> Character { get; set; }
+        public DbSet<Comic> Comic { get; set; }
+        public DbSet<Serie> Serie { get; set; }
+        public DbSet<Event> Event { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
