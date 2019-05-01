@@ -34,8 +34,10 @@ namespace EFCoreGraphQL.Api
             services.AddTransient<ISerieRepository, SerieRepository>();
             services.AddSingleton<IDocumentExecuter, DocumentExecuter>();
             services.AddSingleton<MarvelQuery>();
+            services.AddSingleton<MarvelMutation>();
             services.AddSingleton<CharacterType>();
             services.AddSingleton<ComicType>();
+            services.AddSingleton<ComicInputType>();
             services.AddSingleton<EventType>();
             services.AddSingleton<SerieType>();
             var sp = services.BuildServiceProvider();
