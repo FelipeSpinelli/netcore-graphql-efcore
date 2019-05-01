@@ -1,5 +1,6 @@
 using EFCoreGraphQL.Api.GraphQL.Types;
 using EFCoreGraphQL.Core.Data;
+using EFCoreGraphQL.Core.Models;
 using GraphQL.Types;
 
 namespace EFCoreGraphQL.Api.GraphQL
